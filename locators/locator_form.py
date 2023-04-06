@@ -15,3 +15,10 @@ class PageLocators:
         '.services-more-popup__section-content:nth-child(1) > .services-more-popup__item:nth-child(9) .services-more-popup__item-icon') # ссылка на "Картинки"
     LOCATOR_FIRST_IMAGES_ITEMS = (
         By.CSS_SELECTOR, '.PopularRequestList-Item_pos_0 .PopularRequestList-Shadow') # наименование селектора первого элемента картинок
+    LOCATOR_FIRST_IMAGE = (
+        By.XPATH, '(//div[contains(@class,"serp-controller")]/descendant::div[contains(@class,"serp-item")])[1]') # первая картинка категории
+    LOCATOR_NEXT_BUTTON = (By.CSS_SELECTOR, '.CircleButton_type_next > .CircleButton-Icon') # кнопка слеующей картинки
+    LOCATOR_PREV_BUTTON = (By.XPATH, '//div[contains(@class,"CircleButton CircleButton_type_prev")]/'
+                                     'descendant::i[contains(@class,"CircleButton-Icon")]') # кнопка предыдущей картинки
+    LOCATOR_LINK_IMAGE = (By.XPATH, '//img[contains(@class,"MMImage-Origin")]') # основной класс с ссылкой на картинку
+
